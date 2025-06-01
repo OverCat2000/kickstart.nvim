@@ -14,7 +14,21 @@ return {
     { '\\', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
   },
   opts = {
-    git_status = {},
+    git_status = {
+      symbols = {
+        -- Change type
+        added = '✚',
+        deleted = '✖',
+        modified = '',
+        renamed = '󰁕',
+        -- Status type
+        untracked = '',
+        ignored = '',
+        unstaged = '󰄱',
+        staged = '',
+        conflict = '',
+      },
+    },
     filesystem = {
       window = {
         mappings = {
